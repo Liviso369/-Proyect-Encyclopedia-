@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="acxion.html" method="post">
+        <!--opcion 1-->
+        <p><label for="gmail">Gmail: <input type="text" id="gmail"></label></p>
+        <!--opcion 2-->
+        <label for="contrasena">contraseña:</label><br>
+        <input type="text" id="contrasena">
+        <p><label for="extension">Extension <textarea id="extension"></textarea></label></p>
+
+        <!--crear una lista de opciones-->
+        <label>2 + 2 =
+            <select id="sumas">
+
+                <option value="opcion" disabled selected>Eliga una opcion</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+        </label>
+
+        <!--crear checkbox-->
+        <p><b>Pokemon</b></p>
+        <input type="checkbox" value="charmander" checked>
+           <label>Charmander</label><br>
+        <input type="checkbox" value="squirtle">
+           <label>Squirtle</label><br>
+        <input type="checkbox" value="pikachu">
+           <label>Pikachu</label><br>
+
+        <!--Crear opciones de botones el name es importante-->
+        <p><b>Pokemon</b></p>
+        <input type="radio" value="charmander">
+            <label>Charmander</label>
+            <img src="C:\Users\Familia\Desktop\ULP\charmander-ian-boschero.gif" alt="squirtle-2" width="20" height="20"><br>
+        <input type="radio" value="squirtle">
+            <label>Squirtle</label><br>
+        <input type="radio" value="pikachu">
+            <label>Pikachu</label><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>
