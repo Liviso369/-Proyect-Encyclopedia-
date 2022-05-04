@@ -13,5 +13,14 @@ body{
     width: 10%;
 }
 
+.imagenes{
+    display: flex;
+    align-items: stretch;
+}
+.imagenes div p{
+    background-image: url(../img/lengua\ y\ literatura.jpg);
+    height: 500px;
+    width: 200px;
+}
 
 
