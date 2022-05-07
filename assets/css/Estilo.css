@@ -29,10 +29,10 @@ body{
 }
 
 .opcion{
-    padding: 15px 5px;
+    padding: 20px 5px;
 }
 .opcion0 {
-    padding: 20px 5px;
+    padding: 25px 5px;
 }
 
 .social{
@@ -56,7 +56,7 @@ body{
 }
 
 .opcion1{
-    padding: 20px 10px;
+    padding: 25px 10px;
 }
 
 .social:hover{
