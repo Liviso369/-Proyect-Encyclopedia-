@@ -1,26 +1,80 @@
+*{
+margin: 0;}
+
+
 body{
-    background-color: rgb(44, 43, 43);
-    margin: 0;
+    background-color: rgb(19, 19, 19);
+    font-family:'Tapestry', sans-serif;
 }
 
-.avatar{
-    background-color: black;
+.header{
+    background-color: black
+}
+
+.nav{
     display: flex;
-    justify-content: center;
-
-}
-.avatar img{
-    width: 10%;
+    justify-content: space-between;
+    height: 60px;
 }
 
-.imagenes{
+.texto{
+    color: white;
+    font-size: 30px;
+}
+
+.lista{
+    list-style: none;
     display: flex;
-    align-items: stretch;
+    padding: 0px 5px 10px;
 }
-.imagenes div p{
-    background-image: url(../img/lengua\ y\ literatura.jpg);
-    height: 500px;
-    width: 200px;
+
+.opcion{
+    padding: 15px 5px;
 }
+.opcion0 {
+    padding: 20px 5px;
+}
+
+.social{
+  height: 30px;  
+}
+
+.texto{
+    color: white;
+    font-size: 30px;
+}
+
+.logo{
+    height: 60px;
+}
+
+.texto1{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.opcion1{
+    padding: 20px 10px;
+}
+
+.social:hover{
+
+    background-color:rgba(255, 255, 255, 0.404);
+
+}
+
+.texto1:hover{
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+/*menu especial*/
+
+
+
+
+
+
+
 
 
