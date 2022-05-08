@@ -8,13 +8,13 @@ body{
 }
 
 .header{
-    background-color: black
+    background-color: black;
+    height: 70px;
 }
 
 .nav{
     display: flex;
-    justify-content: space-between;
-    height: 70px;
+    justify-content: space-between;  
 }
 
 .texto{
@@ -30,9 +30,11 @@ body{
 
 .opcion{
     padding: 20px 5px;
+    width: max-content;
 }
 .opcion0 {
     padding: 25px 5px;
+    width: max-content;
 }
 
 .social{
@@ -57,6 +59,7 @@ body{
 
 .opcion1{
     padding: 25px 10px;
+    width: max-content;
 }
 
 .social:hover{
