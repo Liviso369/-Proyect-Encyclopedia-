@@ -1,78 +1,62 @@
 *{
-margin: 0;}
-
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background-color: rgb(19, 19, 19);
-    font-family:'Tapestry', sans-serif;
-}
-
-.header{
-    background-color: black;
-    height: 70px;
+    font-family: 'Tapestry', sans-serif;
+    
 }
 
 .nav{
+    background-color: black;
+    height: 50px;
     display: flex;
     justify-content: space-between;  
 }
 
-.texto{
-    color: white;
-    font-size: 30px;
-}
-
-.lista{
-    list-style: none;
-    display: flex;
-    padding: 0px 5px 10px;
-}
-
-.opcion{
-    padding: 20px 5px;
-    width: max-content;
-}
-.opcion0 {
-    padding: 25px 5px;
-    width: max-content;
-}
-
-.social{
-  height: 30px;  
+.contenedor{
+    display: flex;   
 }
 
 .texto{
     color: white;
-    font-size: 30px;
+    font-size: 1em;
+    padding: 15px 5px 10px 15px;
+    width: max-content;
+}
+
+.redes{
+    width: 20px;
+    height: 20px ;
+    padding: 15px 5px;
 }
 
 .logo{
-    padding: 5px 0px;
-    height: 60px;
+    height: 50px ;
 }
 
 .texto1{
     color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.opcion1{
-    padding: 25px 10px;
+    font-size: 1em;
+    padding: 15px 15px ;
     width: max-content;
 }
 
-.social:hover{
+.enlace{
+    text-decoration: none;
+}
 
+.redes:hover{
     background-color:rgba(255, 255, 255, 0.404);
-
 }
 
 .texto1:hover{
     background-color: rgba(255, 255, 255, 0.404);
 }
 
-/*menu especial*/
+
 
 
 
