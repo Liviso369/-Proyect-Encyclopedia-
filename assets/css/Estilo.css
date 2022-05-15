@@ -69,28 +69,28 @@ body{
 .img{
     width: 100px;
     height: 400px;
-    margin: 60px 5px 5px;
+    padding: 90px 5px 5px;
     object-fit: cover;
 }
 
 .img1{
     width: 100px;
     height: 400px;
-    margin: 80px 5px 5px;
+    padding: 110px 5px 5px;
     object-fit: cover;
 }
 
 .img2{
     width: 100px;
     height: 400px;
-    margin: 100px 5px 5px;
+    padding: 130px 5px 5px;
     object-fit: cover;
 }
 
 .img3{
     width: 100px;
     height: 420px;
-    margin: 60px 5px 5px;
+    padding: 70px 5px 5px;
     object-fit: cover;
 }
 
@@ -98,7 +98,7 @@ body{
 .img4{
     width: 100px;
     height: 440px;
-    margin: 20px 5px 5px;
+    padding: 50px 5px 5px;
     object-fit: cover;
 }
 
@@ -106,14 +106,14 @@ body{
 .img5{
     width: 100px;
     height: 400px;
-    margin: 100px 5px 5px;
+    padding: 130px 5px 5px;
     object-fit: cover;
 }
 
 .img6{
     width: 100px;
     height: 400px;
-    margin: 80px 5px 5px;
+    padding: 110px 5px 5px;
     object-fit: cover;
 }
 
@@ -121,11 +121,27 @@ body{
 .img7{
     width: 100px;
     height: 400px;
-    margin: 60px 5px 5px;
+    padding: 90px 5px 5px;
     object-fit: cover;
 }
 
 /*TEXTO*/
+
+.categoria{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    padding: 0px 5px; 
+    text-align: center; 
+}
+
+.total:hover{
+    transform: scale(1.1);
+    
+}
+
 
 
 
