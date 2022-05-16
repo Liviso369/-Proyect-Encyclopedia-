@@ -1,69 +1,69 @@
 /*BARRA DE NAVEGACION*/
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(19, 19, 19);
     font-family: 'Tapestry', sans-serif;
-    
+
 }
 
 /*barra*/
 
-.nav{
+.nav {
     background-color: black;
     height: 50px;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
-.contenedor{
-    display: flex;   
+.contenedor {
+    display: flex;
 }
 
 /*parte izq*/
 
-.texto{
+.texto {
     color: white;
     font-size: 1em;
     padding: 15px 5px 10px 15px;
     width: max-content;
 }
 
-.redes{
+.redes {
     width: 20px;
-    height: 20px ;
+    height: 20px;
     padding: 15px 5px;
 }
 
 /*parte central*/
 
-.logo{
-    height: 50px ;
+.logo {
+    height: 50px;
 }
 
 /*parte derecha*/
 
-.texto1{
+.texto1 {
     color: white;
     font-size: 1em;
-    padding: 15px 15px ;
+    padding: 15px 15px;
     width: max-content;
 }
 
-.enlace{
+.enlace {
     text-decoration: none;
 }
 
 /*complementos de enlace*/
 
-.redes:hover{
-    background-color:rgba(255, 255, 255, 0.404);
+.redes:hover {
+    background-color: rgba(255, 255, 255, 0.404);
 }
 
-.texto1:hover{
+.texto1:hover {
     background-color: rgba(255, 255, 255, 0.404);
 }
 
@@ -71,18 +71,18 @@ body{
 
 /*IMAGENES*/
 
-.contenedor{
-    display: flex; 
+.contenedor {
+    display: flex;
     justify-content: center;
 }
 
 /*IMAGEN1*/
 
-.posicion{
+.posicion {
     padding: 60px 5px 0px;
 }
 
-.imagen{
+.imagen {
     background-image: url(../img/historia.jpg);
     width: 100px;
     height: 400px;
@@ -92,11 +92,11 @@ body{
 
 /*IMAGEN2*/
 
-.posicion1{
+.posicion1 {
     padding: 90px 10px 0px;
 }
 
-.imagen1{
+.imagen1 {
     background-image: url(../img/filosofiayreligion.jpg);
     width: 100px;
     height: 400px;
@@ -106,11 +106,11 @@ body{
 
 /*IMAGEN3*/
 
-.posicion2{
+.posicion2 {
     padding: 125px 5px 0px;
 }
 
-.imagen2{
+.imagen2 {
     background-image: url(../img/arteymusica.jpg);
     width: 100px;
     height: 400px;
@@ -120,11 +120,11 @@ body{
 
 /*IMAGEN4*/
 
-.posicion3{
+.posicion3 {
     padding: 90px 10px 0px;
 }
 
-.imagen3{
+.imagen3 {
     background-image: url(../img/lenguayliteratura.jpg);
     width: 100px;
     height: 400px;
@@ -134,11 +134,11 @@ body{
 
 /*IMAGEN5*/
 
-.posicion4{
+.posicion4 {
     padding: 60px 5px 0px;
 }
 
-.imagen4{
+.imagen4 {
     background-image: url(../img/seresvivos.jpg);
     width: 100px;
     height: 400px;
@@ -149,11 +149,11 @@ body{
 
 /*IMAGEN6*/
 
-.posicion5{
+.posicion5 {
     padding: 125px 10px 0px;
 }
 
-.imagen5{
+.imagen5 {
     background-image: url(../img/deporteyocio.jpg);
     width: 100px;
     height: 400px;
@@ -163,11 +163,11 @@ body{
 
 /*IMAGEN7*/
 
-.posicion6{
+.posicion6 {
     padding: 90px 5px 0px;
 }
 
-.imagen6{
+.imagen6 {
     background-image: url(../img/cienciassociales.png);
     width: 100px;
     height: 400px;
@@ -177,11 +177,11 @@ body{
 
 /*IMAGEN8*/
 
-.posicion7{
+.posicion7 {
     padding: 60px 10px 0px;
 }
 
-.imagen7{
+.imagen7 {
     background-image: url(../img/geografia.jpg);
     width: 100px;
     height: 400px;
@@ -191,17 +191,17 @@ body{
 
 /*complementos de imagenes*/
 
-.enlace{
+.enlace {
     text-decoration: none;
 }
 
-.sombra{
+.sombra {
     width: 100px;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.418);
 }
 
-.letra{
+.letra {
 
     color: white;
     padding: 170px 20px;
@@ -211,34 +211,12 @@ body{
 
 /*animacion*/
 
-.sombra:hover{
-    z-index: 0; 
-    background-color: rgba(0, 0, 0, 0); 
+.sombra:hover {
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.animacion:hover{
+.animacion:hover {
     transform: scale(1.1);
-    z-index: 1;  
+    z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
