@@ -10,6 +10,8 @@ body{
     
 }
 
+/*barra*/
+
 .nav{
     background-color: black;
     height: 50px;
@@ -20,6 +22,8 @@ body{
 .contenedor{
     display: flex;   
 }
+
+/*parte izq*/
 
 .texto{
     color: white;
@@ -34,9 +38,13 @@ body{
     padding: 15px 5px;
 }
 
+/*parte central*/
+
 .logo{
     height: 50px ;
 }
+
+/*parte derecha*/
 
 .texto1{
     color: white;
@@ -48,6 +56,8 @@ body{
 .enlace{
     text-decoration: none;
 }
+
+/*complementos de enlace*/
 
 .redes:hover{
     background-color:rgba(255, 255, 255, 0.404);
@@ -61,86 +71,159 @@ body{
 
 /*IMAGENES*/
 
-.cuadro{
+.contenedor{
     display: flex; 
     justify-content: center;
 }
 
-.img{
+/*IMAGEN1*/
+
+.posicion{
+    padding: 60px 5px 0px;
+}
+
+.imagen{
+    background-image: url(../img/historia.jpg);
     width: 100px;
     height: 400px;
-    padding: 90px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: 45% 50%;
 }
 
-.img1{
+/*IMAGEN2*/
+
+.posicion1{
+    padding: 90px 10px 0px;
+}
+
+.imagen1{
+    background-image: url(../img/filosofiayreligion.jpg);
     width: 100px;
     height: 400px;
-    padding: 110px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: 47% 50%;
 }
 
-.img2{
+/*IMAGEN3*/
+
+.posicion2{
+    padding: 125px 5px 0px;
+}
+
+.imagen2{
+    background-image: url(../img/arteymusica.jpg);
     width: 100px;
     height: 400px;
-    padding: 130px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
 }
 
-.img3{
-    width: 100px;
-    height: 420px;
-    padding: 70px 5px 5px;
-    object-fit: cover;
+/*IMAGEN4*/
+
+.posicion3{
+    padding: 90px 10px 0px;
 }
 
-
-.img4{
-    width: 100px;
-    height: 440px;
-    padding: 50px 5px 5px;
-    object-fit: cover;
-}
-
-
-.img5{
+.imagen3{
+    background-image: url(../img/lenguayliteratura.jpg);
     width: 100px;
     height: 400px;
-    padding: 130px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: 35% 50%;
 }
 
-.img6{
+/*IMAGEN5*/
+
+.posicion4{
+    padding: 60px 5px 0px;
+}
+
+.imagen4{
+    background-image: url(../img/seresvivos.jpg);
     width: 100px;
     height: 400px;
-    padding: 110px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: 57% 50%;
+
 }
 
+/*IMAGEN6*/
 
-.img7{
+.posicion5{
+    padding: 125px 10px 0px;
+}
+
+.imagen5{
+    background-image: url(../img/deporteyocio.jpg);
     width: 100px;
     height: 400px;
-    padding: 90px 5px 5px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
 }
 
-/*TEXTO*/
+/*IMAGEN7*/
 
-.categoria{
-    font-size: 20px;
+.posicion6{
+    padding: 90px 5px 0px;
+}
+
+.imagen6{
+    background-image: url(../img/cienciassociales.png);
+    width: 100px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*IMAGEN8*/
+
+.posicion7{
+    padding: 60px 10px 0px;
+}
+
+.imagen7{
+    background-image: url(../img/geografia.jpg);
+    width: 100px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*complementos de imagenes*/
+
+.enlace{
+    text-decoration: none;
+}
+
+.sombra{
+    width: 100px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.letra{
+
     color: white;
-    position: absolute;
-    width: 100px;
-    top: 50%;
-    padding: 0px 5px; 
-    text-align: center; 
+    padding: 170px 20px;
+    text-align: center;
+
 }
 
-.total:hover{
-    transform: scale(1.1);
-    
+/*animacion*/
+
+.sombra:hover{
+    z-index: 0; 
+    background-color: rgba(0, 0, 0, 0); 
 }
+
+.animacion:hover{
+    transform: scale(1.1);
+    z-index: 1;  
+}
+
+
+
+
 
 
 
