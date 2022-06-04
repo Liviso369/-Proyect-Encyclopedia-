@@ -1,130 +1,212 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Tapestry', sans-serif;
 }
 
-body{
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+/*contenedor general*/
+.contenedor1 {
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(19, 19, 19);
+
 }
 
 /*Barra de navegacion*/
+
 .nav {
-    background-color: black;
-    width: 100vw;
-    height: 50px;
     display: flex;
     justify-content: center;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
 }
-
-/*parte central*/
 
 .logo {
     height: 50px;
 }
 
-/*Formulario*/
 
-/*Contenedor*/
+/*contenedor formulario general*/
 
-.contenedor {
+.contenedor2 {
     display: flex;
-    width: 100vw;
-    height: 90vh;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
+    height: 50cm;
+    padding-top: 10px;
     background-color: rgb(19, 19, 19);
 }
 
-/*Contenedor 1*/
-
-.contenedor1 {
+/*contenedor formulario apartados y borde creativo*/
+.formulario {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
-    padding: 10px 10px;
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    border: 5px solid;
+    border-image: linear-gradient(rgb(25, 0, 255), rgb(0, 0, 0) 10%, rgb(25, 0, 255) 20%, rgb(0, 0, 0) 30%, rgb(25, 0, 255) 40%, rgb(0, 0, 0) 60%) 1;
+    animation: rotate 2.5s ease-in infinite;
 }
 
-/*Estilo cajas generales*/
+@keyframes rotate {
+    50% {
+        border-image: linear-gradient(360deg, rgb(25, 0, 255), rgb(0, 0, 0) 10%, rgb(25, 0, 255) 20%, rgb(0, 0, 0) 30%, rgb(25, 0, 255)40%, rgb(0, 0, 0) 60%) 1;
+    }
+}
+
+/*contenedor cajas*/
 
 .cajas {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 2px 0;
 }
 
-/*Titulo*/
+/*Titulo registro*/
 
-.texto{
-    font-family: 'Tapestry' , sans-serif;
-    color: white;
+.registro {
+    font-size: 1.5rem;
     text-align: center;
-    letter-spacing: 10px;
-    text-shadow: white 2px 2px 5px;
-    padding-left: 7px;
-   
-}
-
-/*label generales*/
-
-.label{
-    font-family: 'Tapestry' , sans-serif;
     color: white;
-    letter-spacing: 2px;
 }
 
-/*imput generales*/
+/*label de cada apartado*/
 
-.input{
-    font-family: 'Tapestry' , sans-serif;
-    letter-spacing: 2px;
-    background: none;
+.label {
     font-size: 1rem;
+    padding-left: 10px;
     color: white;
-    outline: none;
-    border: solid white 1px;
-}
-
-/*seccion*/
-
-.seccion{
-    font-family: 'Tapestry' , sans-serif;
-    letter-spacing: 2px;
-    background: none;
-    font-size: 1rem;
-    color: white;
-    outline: none;
-    border: solid white 1px;
-}
-
-/*opciones de seccion*/
-
-.opcion{
-    color: black
-}
-
-/*boton*/
-.boton{
-    font-family: 'Tapestry' , sans-serif;
-    letter-spacing: 2px;
-    background: none;
-    font-size: 1rem;
-    color: white;
-    border: solid white 1px;
-    width: max-content;
-    height: max-content;
-    border-radius: 5px;
-}
-
-.boton:hover{
-    background-color: rgb(48, 48, 48);
     cursor: pointer;
 }
 
-/* caja del boton*/
-.caja8{
+/*input de cada apartado*/
+
+.input {
+    font-size: 1rem;
+    margin: 0px 10px;
+    border: solid white 1px;
+    outline: none;
+    padding: 0px 5px;
+}
+
+/*Errores*/
+
+.error {
+    font-size: 0.9rem;
+    padding: 0px 10px;
+    width: 300px;
+    color: rgb(207, 207, 207);
+    display: none;
+}
+
+/*Error total*/
+
+.errortotal {
+
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 10px;
+    width: 300px;
+    color: rgb(207, 207, 207);
+    display: none;
+}
+
+/*Boton*/
+
+.caja9 {
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 10px 0;
+}
+
+.boton {
+    font-size: 1rem;
+    background: none;
+    color: white;
+    border: solid rgb(25, 0, 255) 1px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*Clases de validacion*/
+
+.validar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    border: 5px solid;
+    border-image: linear-gradient(rgb(25, 0, 255), rgb(0, 0, 0) 10%, rgb(25, 0, 255) 20%, rgb(0, 0, 0) 30%, rgb(25, 0, 255) 40%, rgb(0, 0, 0) 60%) 1;
+    animation: rotate 2.5s ease-in infinite;
     padding-bottom: 10px;
+}
+
+.label1 {
+    font-size: 1rem;
+    padding-left: 10px;
+    color: white;
+}
+
+.texto {
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    font-size: 1rem;
+    margin: 0px 10px;
+    border: solid white 1px;
+    padding: 0px 5px;
+}
+
+.cajasaux {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0;
+}
+
+/*Clases en conjunto con javascript*/
+
+/*Cambio en el input*/
+
+.inputfalse {
+    border: solid rgb(255, 0, 0) 1px;
+}
+
+.inputtrue {
+    border: solid rgb(72, 255, 0) 1px;
+}
+
+/*Cambio en los errores*/
+
+.erroractivo {
+    display: block;
+}
+
+.errortotalactivo {
+    display: block;
 }

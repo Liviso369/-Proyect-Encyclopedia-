@@ -14,133 +14,164 @@
 
 <body>
 
-    <!--barra de navegacion-->
-    <nav class="nav">
-        <!--parte central-->
-        <a href="https://liviso369.github.io/-Proyect-Encyclopedia-/" class="enlace"><img src="assets/img/logo.png" class="logo"></a>
-    </nav>
-    <main class="contenedor">
-        <!--Formulario-->
+    <!--contenedor general-->
 
-        <form class="contenedor1">
-            <!--Titulo-->
-            <p class="texto">---Registrate---</p>
+    <main class="contenedor1">
 
-            <!--Nombre-->
-            <div class="caja1 cajas">
-                <label for="nombre" class="label">Nombre:</label>
-                <input type="text" id="nombre" class="input">
+        <!--Barra de navegacion-->
+
+        <nav class="nav">
+            <a href="https://liviso369.github.io/-Proyect-Encyclopedia-/" class="enlace"><img src="assets/img/logo.png"
+                    class="logo"></a>
+        </nav>
+
+        <!--Contenedor formulario general-->
+
+        <div class="contenedor2">
+
+            <!--Contenedor formulario apartados-->
+
+            <form class="formulario" id="formulario">
+
+                <p class="registro">Registrate</p>
+
+                <!--Caja Nombre-->
+
+                <div class="cajas" id="caja1">
+                    <label for="nombre" class="label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="input">
+                    <p class="error">El Nombre tiene que ser 4 a 16 digitos y solo puede contener numeros, letras y
+                        guion bajo.</p>
+                </div>
+
+                <!--Caja Apellido-->
+
+                <div class="cajas" id="caja2">
+                    <label for="apellido" class="label">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="input">
+                    <p class="error">El Apellido tiene que ser 4 a 16 digitos y solo puede contener letras.</p>
+                </div>
+
+                <!--Caja usuario-->
+
+                <div class="cajas" id="caja3">
+                    <label for="usuario" class="label">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" class="input">
+                    <p class="error">El usuario tiene que ser 4 a 16 digitos y solo puede contener numeros, letras y
+                        guion bajo.</p>
+                </div>
+
+                <!--Caja contraseña-->
+
+                <div class="cajas" id="caja4">
+                    <label for="clave1" class="label">Contraseña:</label>
+                    <input type="password" id="clave1" name="clave1" class="input">
+                    <p class="error">La contraseña tiene que ser de 4 a 12 digitos</p>
+                </div>
+
+                <!--Caja repetir contraseña-->
+
+                <div class="cajas" id="caja5">
+                    <label for="clave2" class="label">Repetir contraseña:</label>
+                    <input type="password" id="clave2" name="clave2" class="input">
+                    <p class="error">Ambas contraseñas deben ser iguales.</p>
+                </div>
+
+                <!--Caja email-->
+
+                <div class="cajas" id="caja6">
+                    <label for="email" class="label">Email:</label>
+                    <input type="email" id="email" name="email" class="input">
+                    <p class="error">El correo solo puede contener letras, numeros, puntos, guiones, y guion bajo.</p>
+                </div>
+
+                <!--Caja categoria favorita-->
+
+                <div class="cajas" id="caja7">
+                    <label for="favorito" class="label">Seccion favorita</label>
+                    <select name="favorito" id="favorito" class="input">
+                        <option value="0" disabled class="opcion">Opciones</option>
+                        <option value="1">Historia</option>
+                        <option value="2">Filosofía y religión</option>
+                        <option value="3">Arte y Música</option>
+                        <option value="4">Lengua y literatura</option>
+                        <option value="5">Seres Vivos</option>
+                        <option value="6">Deporte y ocio</option>
+                        <option value="7">Ciencias sociales</option>
+                        <option value="8">Geografía</option>
+                    </select>
+                    <p class="error">Eliga una opcion.</p>
+                </div>
+
+                <!--Caja error en todo los campos-->
+
+                <div class="caja" id="caja8">
+                    <p class="errortotal">Complete todo los campos.</p>
+                </div>
+
+                <!--Caja boton-->
+
+                <div class="caja9">
+                    <button type="submit" class="boton">Enviar</button>
+                </div>
+            </form>
+
+            <!--Contenedor de datos validos-->
+
+            <div class="validar" id="validar">
+
+                <p class="registro">Datos validos</p>
+
+                <!--Caja Nombre-->
+
+                <div class="cajasaux" id="cajaaux1">
+                    <p class="label1">Nombre:</p>
+                    <p id="nombreaux" class="texto"></p>
+                </div>
+
+                <!--Caja Apellido-->
+
+                <div class="cajasaux" id="cajaaux2">
+                    <p class="label1">Apellido:</p>
+                    <p id="apellidoaux" class="texto"></p>
+                </div>
+
+                <!--Caja usuario-->
+
+                <div class="cajasaux" id="cajaaux3">
+                    <p class="label1">Usuario:</p>
+                    <p id="usuarioaux" class="texto"></p>
+                </div>
+
+                <!--Caja contraseña-->
+
+                <div class="cajasaux" id="cajaaux4">
+                    <p class="label1">Contraseña:</p>
+                    <p id="clave1aux" class="texto"></p>
+                </div>
+
+                <!--Caja repetir contraseña-->
+
+                <div class="cajasaux" id="cajaaux5">
+                    <p class="label1">Repetir contraseña:</p>
+                    <p id="clave2aux" class="texto"></p>
+                </div>
+
+                <!--Caja email-->
+
+                <div class="cajasaux" id="cajaaux6">
+                    <p class="label1">Email:</p>
+                    <p id="emailaux" class="texto"></p>
+                </div>
+
+                <!--Caja categoria favorita-->
+
+                <div class="cajasaux" id="cajaaux7">
+                    <p class="label1">Seccion favorita</p>
+                    <p id="favoritoaux" class="texto"></p>
+                </div>
             </div>
-
-            <!--Apellido-->
-            <div class="caja2 cajas">
-                <label for="apellido" class="label">Apellido:</label>
-                <input type="text" id="apellido" class="input">
-            </div>
-
-            <!--Usuario-->
-            <div class="caja3 cajas">
-                <label for="usuario" class="label">Usuario:</label>
-                <input type="text" id="usuario" class="input">
-            </div>
-
-            <!--Email-->
-            <div class="caja4 cajas">
-                <label for="email" class="label">Email:</label>
-                <input type="text" id="email" class="input">
-            </div>
-
-            <!--Contraseña-->
-            <div class="caja5 cajas">
-                <label for="clave" class="label">Contraseña:</label>
-                <input type="text" id="clave" class="input">
-            </div>
-
-            <!--Repetir contraseña-->
-            <div class="caja6 cajas">
-                <label for="clave" class="label">Repetir contraseña:</label>
-                <input type="text" id="clave" class="input">
-            </div>
-
-            <!--categorias favoritas-->
-            <div class="caja7 cajas">
-                <label for="seccion" class="label">Categoria favorita:</label>
-                <select id="seccion" class="seccion">
-                    <option value="0" selected disabled class="opcion">Opciones</option>
-                    <option value="1" class="opcion">Historia</option>
-                    <option value="2" class="opcion">Filosofía y religión</option>
-                    <option value="3" class="opcion">Arte y Música</option>
-                    <option value="4" class="opcion">Lengua y literatura</option>
-                    <option value="5" class="opcion">Seres Vivos</option>
-                    <option value="6" class="opcion">Deporte y ocio</option>
-                    <option value="7" class="opcion">Ciencias sociales</option>
-                    <option value="8" class="opcion">Geografía</option>
-                </select>
-            </div>
-
-            <!--Boton-->
-            <div class="caja8 cajas">
-                <button type="submit" class="boton">Enviar</button>
-            </div>
-        </form>
-
-
-        <!--Validar datos-->
-
-        <form class="contenedor1">
-            <!--Titulo-->
-            <p class="texto">Datos validos</p>
-
-            <!--Nombre-->
-            <div class="caja1 cajas">
-                <label for="nombre" class="label">Nombre:</label>
-                <input type="text" id="nombre" class="input" disabled>
-            </div>
-
-            <!--Apellido-->
-            <div class="caja2 cajas">
-                <label for="apellido" class="label">Apellido:</label>
-                <input type="text" id="apellido" class="input" disabled>
-            </div>
-
-            <!--Usuario-->
-            <div class="caja3 cajas">
-                <label for="usuario" class="label">Usuario:</label>
-                <input type="text" id="usuario" class="input" disabled>
-            </div>
-
-            <!--Email-->
-            <div class="caja4 cajas">
-                <label for="email" class="label">Email:</label>
-                <input type="text" id="email" class="input" disabled>
-            </div>
-
-            <!--Contraseña-->
-            <div class="caja5 cajas">
-                <label for="clave" class="label">Contraseña:</label>
-                <input type="text" id="clave" class="input" disabled>
-            </div>
-
-            <!--categorias favoritas-->
-            <div class="caja7 cajas">
-                <label for="seccion" class="label">Categoria favorita:</label>
-                <select id="seccion" class="seccion" disabled>
-                    <option value="0" class="opcion" selected disabled>Opciones</option>
-                    <option value="1" class="opcion">Historia</option>
-                    <option value="2" class="opcion">Filosofía y religión</option>
-                    <option value="3" class="opcion">Arte y Música</option>
-                    <option value="4" class="opcion">Lengua y literatura</option>
-                    <option value="5" class="opcion">Seres Vivos</option>
-                    <option value="6" class="opcion">Deporte y ocio</option>
-                    <option value="7" class="opcion">Ciencias sociales</option>
-                    <option value="8" class="opcion">Geografía</option>
-                </select>
-            </div>
-            <!--Boton-->
-            <div class="caja8 cajas">
-            </div>
-        </form>
+        </div>
     </main>
 </body>
-
 </html>
