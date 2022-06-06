@@ -40,8 +40,7 @@
                 <div class="cajas" id="caja1">
                     <label for="nombre" class="label">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="input">
-                    <p class="error">El Nombre tiene que ser 4 a 16 digitos y solo puede contener numeros, letras y
-                        guion bajo.</p>
+                    <p class="error">El Nombre tiene que ser 4 a 16 digitos, solo puede contener letras.</p>
                 </div>
 
                 <!--Caja Apellido-->
@@ -90,15 +89,15 @@
                 <div class="cajas" id="caja7">
                     <label for="favorito" class="label">Seccion favorita</label>
                     <select name="favorito" id="favorito" class="input">
-                        <option value="0" disabled class="opcion">Opciones</option>
-                        <option value="1">Historia</option>
-                        <option value="2">Filosofía y religión</option>
-                        <option value="3">Arte y Música</option>
-                        <option value="4">Lengua y literatura</option>
-                        <option value="5">Seres Vivos</option>
-                        <option value="6">Deporte y ocio</option>
-                        <option value="7">Ciencias sociales</option>
-                        <option value="8">Geografía</option>
+                        <option value="opcion" selected disabled ="opcion">Opciones</option>
+                        <option value="Historia">Historia</option>
+                        <option value="Filosofía y religión">Filosofía y religión</option>
+                        <option value="Arte y Música">Arte y Música</option>
+                        <option value="Lengua y literatura">Lengua y literatura</option>
+                        <option value="Seres Vivos">Seres Vivos</option>
+                        <option value="Deporte y ocio">Deporte y ocio</option>
+                        <option value="Ciencias sociales">Ciencias sociales</option>
+                        <option value="Geografía">Geografía</option>
                     </select>
                     <p class="error">Eliga una opcion.</p>
                 </div>
@@ -172,6 +171,10 @@
                 </div>
             </div>
         </div>
+
+        <script src="assets/js/formulario.js"></script>
+
     </main>
 </body>
+
 </html>
