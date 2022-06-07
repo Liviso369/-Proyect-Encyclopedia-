@@ -28,7 +28,7 @@ function anterior2() {
         document.animal.src = imagen[i];
     }   
 }
-//envento el cual al hacer click en (">") o ("<") llama a la funcion
+//evento el cual al hacer click en (">") o ("<") llama a la funcion
 adelante2.addEventListener("click", siguiente2);
 atras2.addEventListener("click", anterior2);
 
