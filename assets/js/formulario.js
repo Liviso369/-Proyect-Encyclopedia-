@@ -49,7 +49,6 @@ function enviar(e) {
 //e.target.name me da el nombre de las etiquetas input
 
 function validarFormulario(e) {
-    console.log(e.target.name)
     switch (e.target.name) {
         case "nombre":
             validarnombre(e);
