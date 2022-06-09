@@ -307,7 +307,7 @@ function error7() {
 function error8() {
     var elemento = document.createElement("p");
     elemento.innerHTML = "Complete todo los campos."
-    elemento.setAttribute("class", "error")
+    elemento.setAttribute("class", "errortotal")
     var caja = document.getElementById("caja8")
     caja.appendChild(elemento);
 }
