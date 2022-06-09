@@ -37,13 +37,13 @@ function enviar(e) {
     e.preventDefault();
 
     if (validartodo.nombre && validartodo.apellido && validartodo.usuario && validartodo.clave1 && validartodo.clave2 && validartodo.email && validartodo.favorito) {
-
         datos();
         formulario.reset();
         for (i = 0; i < inputs.length; i++) {
             inputs[i].removeAttribute("class", "inputtrue")
             inputs[i].setAttribute("class", "input")
         }
+        document.querySelector("#caja8 .errortotal").classList.remove("errortotalactivo");
         inputs[0].focus();
     } else {
         document.querySelector("#caja8 .errortotal").classList.add("errortotalactivo");
