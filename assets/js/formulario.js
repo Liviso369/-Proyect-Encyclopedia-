@@ -1,11 +1,16 @@
-
 //obtenemos la etiqueta form con todo su contenido
+
 var formulario = document.getElementById("formulario");
+
 //obtenemos un array de los input
 var inputs = [...document.getElementsByTagName("input")];
+
 //obtenemos el select con todo su contenido
 var valselect = document.getElementById("favorito");
 inputs[0].focus();
+
+// funcion llama a las funciones para crear los parrafos de errores
+llamarerrores();
 
 //creamos una coleccion de datos(objetos)
 var expresiones = {
@@ -31,7 +36,7 @@ var validartodo = {
 function enviar(e) {
     e.preventDefault();
 
-    if(validartodo.nombre && validartodo.apellido && validartodo.usuario && validartodo.clave1 && validartodo.clave2 && validartodo.email && validartodo.favorito) {
+    if (validartodo.nombre && validartodo.apellido && validartodo.usuario && validartodo.clave1 && validartodo.clave2 && validartodo.email && validartodo.favorito) {
 
         datos();
         formulario.reset();
@@ -40,7 +45,7 @@ function enviar(e) {
             inputs[i].setAttribute("class", "input")
         }
         inputs[0].focus();
-    }else{
+    } else {
         document.querySelector("#caja8 .errortotal").classList.add("errortotalactivo");
     }
 }
@@ -216,13 +221,95 @@ function validarfavorito() {
 
 //funcion de sobrescribir
 function datos() {
-    document.getElementById("nombreaux").innerHTML= inputs[0].value;
-    document.getElementById("apellidoaux").innerHTML= inputs[1].value;
-    document.getElementById("usuarioaux").innerHTML= inputs[2].value;
-    document.getElementById("clave1aux").innerHTML= inputs[3].value;
-    document.getElementById("clave2aux").innerHTML= inputs[4].value;
-    document.getElementById("emailaux").innerHTML= inputs[5].value;
-    document.getElementById("favoritoaux").innerHTML= valselect.value; 
+    document.getElementById("nombreaux").innerHTML = inputs[0].value;
+    document.getElementById("apellidoaux").innerHTML = inputs[1].value;
+    document.getElementById("usuarioaux").innerHTML = inputs[2].value;
+    document.getElementById("clave1aux").innerHTML = inputs[3].value;
+    document.getElementById("clave2aux").innerHTML = inputs[4].value;
+    document.getElementById("emailaux").innerHTML = inputs[5].value;
+    document.getElementById("favoritoaux").innerHTML = valselect.value;
+}
+
+
+//llama a la creacion de parrafo error
+function llamarerrores() {
+    ///creando elementos error
+    error1();
+    error2();
+    error3();
+    error4();
+    error5();
+    error6();
+    error7();
+    error8();
+}
+
+//funcion creacion de errores
+
+function error1() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "El Nombre tiene que ser 4 a 16 digitos, solo puede contener letras."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja1")
+    caja.appendChild(elemento);
+}
+
+
+function error2() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "El Apellido tiene que ser 4 a 16 digitos y solo puede contener letras."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja2")
+    caja.appendChild(elemento);
+}
+
+function error3() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "El usuario tiene que ser 4 a 16 digitos y solo puede contener numeros, letras y guion bajo."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja3")
+    caja.appendChild(elemento);
+}
+
+function error4() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "La contraseña tiene que ser de 4 a 12 digitos"
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja4")
+    caja.appendChild(elemento);
+}
+
+function error5() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "Ambas contraseñas deben ser iguales."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja5")
+    caja.appendChild(elemento);
+}
+
+function error6() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "El correo solo puede contener letras, numeros, puntos, guiones, y guion bajo."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja6")
+    caja.appendChild(elemento);
+}
+
+function error7() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "Eliga una opcion."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja7")
+    caja.appendChild(elemento);
+}
+
+
+function error8() {
+    var elemento = document.createElement("p");
+    elemento.innerHTML = "Complete todo los campos."
+    elemento.setAttribute("class", "error")
+    var caja = document.getElementById("caja8")
+    caja.appendChild(elemento);
 }
 
 //cuando el formulario haga submit llame a la funcion enviar

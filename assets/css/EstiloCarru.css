@@ -6,17 +6,49 @@
 
 body {
     background-color: rgb(19, 19, 19);
+}
 
+/*scroll de pagina*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/*Barra de navegacion*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+}
+
+.logo {
+    height: 50px;
 }
 
 /*contenedor general*/
 
-.contenedor {
+.contenedor-general {
     display: flex;
-    min-height: 47.5vmax;
+    min-height: max-content;
     justify-content: center;
     align-items: center;
     background-color: rgb(19, 19, 19);
+    padding: 3%;
 }
 
 
@@ -32,17 +64,20 @@ body {
     cursor: pointer;
 }
 
+/*caja 1*/
+
 /*contenedor 1*/
 
-.contenedor1 {
+.contenedor {
     width: 1090px;
     height: max-content;
-    border-radius: 2px;
-    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    background-color: rgb(168, 166, 166);
+    box-shadow: 2px 2px 20px rgb(12, 8, 230);
 }
 
 /*contenedor 2*/
-.contenedor2 {
+.contenedor1_1 {
     display: flex;
     width: max-content;
     height: max-content;
@@ -79,15 +114,51 @@ body {
     text-align: center; 
     letter-spacing: 2px;
     padding-top: 10px;
-    text-decoration: underline blue;
+    text-decoration: underline 1px rgb(0, 0, 0);
 }
 
 .subtitulo{ 
     letter-spacing: 2px;
-    text-decoration: underline blue;
+    padding-left: 10px;
+    text-decoration: underline 1px rgb(0, 0, 0);
 }
 
 .texto{
     font-size: 1.2rem;
     padding: 10px 10px;
+    text-align: center;
 }
+
+.subtitulo1{
+    letter-spacing: 2px;
+    padding: 50px 10px 10px;
+    text-decoration: underline 1px rgb(0, 0, 0);
+}
+
+.texto1{
+    font-size: 1.2rem;
+    padding: 20px 10px 110px;
+    text-align: center;
+}
+
+.texto2{
+    font-size: 1.2rem;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.texto3{
+    font-size: 1.2rem;
+    padding: 20px 10px 64px;
+    text-align: center;
+}
+
+
+/*Clases en conjunto con javascript*/
+
+.contenedornone{
+    display: none;
+
+}
+
+

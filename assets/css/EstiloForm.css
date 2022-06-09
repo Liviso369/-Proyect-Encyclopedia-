@@ -4,6 +4,8 @@
     font-family: 'Tapestry', sans-serif;
 }
 
+/*scroll de pagina*/
+
 body::-webkit-scrollbar {
     width: 10px;
     height: 10px;
